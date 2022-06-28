@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  scrollbar-width: 7px;
+  scrollbar-color: #9a2eff transparent;
+}
+.main-container {
+  width: clamp(700px 50%, 50%);
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #3500c8;
+}
+
+.selected-music {
+  background-color: #d3d0ff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import "./partials/player";
+@import "./partials/song";
+@import "./partials/library";
+@import "./partials/libraryMusic";
+@import "./partials/nav";
+@import "./partials/landing";

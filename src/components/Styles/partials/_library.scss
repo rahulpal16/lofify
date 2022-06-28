@@ -1,0 +1,64 @@
+.library-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 24%;
+  height: 100%;
+  display: flex;
+  border-right: 1px solid #29272c;
+  flex-direction: column;
+  overflow-y: scroll;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  opacity: 0;
+  background-color: rgb(235, 255, 253);
+  scrollbar-width: 7px;
+  scrollbar-color: #4600c8 transparent;
+  z-index: 1;
+  .library-nav {
+    display: flex;
+    justify-content: space-evenly;
+    h2 {
+      padding: 2rem;
+    }
+    select {
+      margin: 1.7rem 10px;
+      height: 2.3rem;
+      border: 2px solid rgb(67, 65, 70);
+      border-radius: 4px;
+      font-size: 1rem;
+      background-color: white;
+      option {
+        background-color: #1d1322;
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1203px) {
+  .library-container {
+    width: 100%;
+  }
+  .library-nav {
+    margin-top: 2.5rem;
+  }
+}
+
+.library-container::-webkit-scrollbar {
+  width: 2px;
+}
+.library-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.library-container::-webkit-scrollbar-thumb {
+  background-color: #5d00c8;
+}
+
+.selected-music {
+  background-color: #d0e3ff;
+}
+.show-library {
+  transform: translateX(0%);
+  opacity: 1;
+}

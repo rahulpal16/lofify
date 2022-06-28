@@ -1,0 +1,28 @@
+.track {
+  border-radius: 4px;
+  :hover {
+    background-color: #b8a4ffe7;
+  }
+  .library-music {
+    padding: 1rem 2rem;
+    display: flex;
+    cursor: pointer;
+
+    img {
+      width: 6rem;
+      height: 6rem;
+    }
+    .library-title {
+      padding-left: 2rem;
+      align-items: left;
+      h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.4rem;
+      }
+      h4 {
+        font-size: 0.8rem;
+        color: #281e3f;
+      }
+    }
+  }
+}
